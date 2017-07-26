@@ -2,15 +2,18 @@
 Javascript spinning plot wheel
 
 # Use
-Include file:
+##Include file:
+```html
 <script type="text/javascript" src="plotwheel.js"></script>
+```
 
-Make a HTML Canvas:
-<canvas id="myWheel" width="1000" height="900">
-	Your browser doesn't support the HTML5 canvas tag
-</canvas>
+##Make a HTML Canvas:
+```html
+<canvas id="myWheel" width="1000" height="900"></canvas>
+```
 
-Javascript Setup:
+##Javascript Setup:
+```javascript
 <script>
 		// Set up Wheel Settings
 		var settings = {
@@ -33,6 +36,7 @@ Javascript Setup:
 			wheel.spin();
 		});
 </script>
+```
 
 # Example
 https://www.thinkplanwrite.com/#/plotwheel
