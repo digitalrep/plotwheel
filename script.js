@@ -90,6 +90,8 @@
 				}
 				currentPos += posInc;
 			}
+			
+			startPos = currentPos;
 
 			// Circle Outline
 			ctx.beginPath();
@@ -117,7 +119,10 @@
 				printWheel(amt);
 			}
 
-			var spinning = setInterval(function() { spin(amt += 1 / 100) }, 1);
+			//                               	      how many draws / how often to draw 
+			//				  	      finer = higher / slower = higher number
+			var spinning = setInterval(function() { spin(amt += 1 / 200) }, 50);
+		      //var spinning = setInterval(function() { spin(amt += 1 / 100) }, 1);
 			setInterval(function() { clearInterval(spinning) }, rand);
 
 		}
